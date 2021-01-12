@@ -62,6 +62,7 @@ if(BUILD_COVERAGE)
         add_coverage(${PROJECT})
     endfunction()
 
+
     set(ENABLE_COVERAGE ON CACHE BOOL "Enable coverage build." FORCE)
     list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
     find_package(codecov)
