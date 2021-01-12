@@ -13,4 +13,5 @@ cmake -H. -B_builds $CMAKE_OPTS -DBUILD_COVERAGE=ON
 cmake --build _builds
 cmake --build _builds --target test
 cmake --build _builds --target gcov
+cmake --build _builds --target lcov
 gcovr -r  .
