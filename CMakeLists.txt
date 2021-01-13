@@ -63,7 +63,7 @@ if(BUILD_COVERAGE)
 
 
     set(ENABLE_COVERAGE ON CACHE BOOL "Enable coverage build." FORCE)
-    list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
+    list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/tools/coverage/cmake")
     find_package(codecov)
     enable_project_coverage(lab-07-asio-server)
     enable_project_coverage(tests)
